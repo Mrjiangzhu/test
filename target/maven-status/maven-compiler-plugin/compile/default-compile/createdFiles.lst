@@ -1,0 +1,16 @@
+com\ruofeng\app\framework\codegen\model\ModelConfig.class
+com\ruofeng\app\common\configuration\BeetlSqlConfiguration.class
+com\ruofeng\app\DemoApplication.class
+com\ruofeng\app\common\utils\SqlManagerUtil.class
+com\ruofeng\app\framework\codegen\controller\GeneratorController.class
+com\ruofeng\app\framework\codegen\controller\GeneratorControllerV2.class
+com\ruofeng\app\framework\codegen\service\GeneratorService2.class
+com\ruofeng\app\framework\codegen\functions\KotlinFun.class
+com\ruofeng\app\common\configuration\KaptchaConfig.class
+com\ruofeng\app\common\utils\DateUtils.class
+com\ruofeng\app\framework\codegen\bean\GenSQLManager.class
+com\ruofeng\app\common\utils\StringUtils.class
+com\ruofeng\app\framework\codegen\model\TableRowConfig.class
+com\ruofeng\app\common\utils\CommonUtils.class
+com\ruofeng\app\framework\codegen\dao\GeneratorDao.class
+com\ruofeng\app\framework\codegen\model\GeneratorParam.class

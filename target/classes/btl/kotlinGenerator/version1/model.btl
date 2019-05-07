@@ -1,0 +1,31 @@
+package ${model.pkg}
+import org.beetl.sql.core.annotatoin.Table
+import org.beetl.sql.core.annotatoin.TableTemplate
+import java.math.*
+import java.lang.*
+import java.util.*
+import java.sql.Timestamp
+import javax.persistence.Id
+/*
+* ${model.tableComment}
+* gen by ruofeng945 ${date(),"yyyy-MM-dd"}
+*/
+@Table(name = "${model.tableName}")
+open class ${model.className}{
+<%
+if(!isEmpty(model.attrs)){
+    for(attr in model.attrs){
+        if(!isEmpty(attr.columnComment)){
+            println("//"+attr.columnComment);
+        }
+        if(attr.columnKey=="PRI"){
+            println(" @Id");
+        }
+        var columnName=kotlin.dbcolToClzAttr(attr.columnName);
+        var kotlinType=kotlin.turnSqlType(attr.dataType);
+        var str=" var "+columnName+" : "+kotlinType+"? = null";
+        println(str);
+    }
+}
+%>
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成配置页面</title>
+    <link href="https://unpkg.com/element-ui@2.4.11/lib/theme-chalk/index.css" rel="stylesheet"/>
+    <link href="../../lib/plugins/layx/layx.min.css" rel="stylesheet">
+    <style>
+        .el-checkbox.is-bordered {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .el-card {
+            /*border-color: #409EFF;*/
+            border-color: #b3c0d1;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <template>
+        <el-row :gutter="12">
+            <el-col :span="24">
+                <el-card shadow="hover">
+                    <div slot="header" class="clearfix">
+                        <span>查询条件</span>
+                        <el-button style="float: right; padding: 3px 0" type="text">操作按钮
+                        </el-button>
+                    </div>
+                    <div class="clearfix">
+                        <el-form-item label="项目目录位置">
+                            <el-input v-model="param.tableSchema"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+    </template>
+</div>
+<script src="http://cdn.bootcss.com/vue/2.5.9/vue.min.js"></script>
+<script src="https://unpkg.com/element-ui@2.4.11/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
+<script src="../../lib/plugins/layx/layx.min.js"></script>
+<script src="../../lib/libs/common.js"></script>
+<script src="setting.js"></script>
+</body>
+</html>

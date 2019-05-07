@@ -1,0 +1,96 @@
+package ${model.pkg}
+import com.ruofeng.app.common.utils.toJsonStr
+import com.ruofeng.app.common.utils.HttpMessage
+import org.springframework.http.HttpStatus
+import org.springframework.http.ResponseEntity
+import org.beetl.sql.core.engine.PageQuery
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.*
+/*
+* gen by ruofeng945 controller ${date(),"yyyy-MM-dd"}
+*/
+<%
+var urlPath=kotlin.packageToUrl(model.pkg);
+var objName=kotlin.lowerFirst(model.className);
+var pkFiledName="";
+var pkFiledType="";
+if(!isEmpty(model.attrs)){
+    for(attr in model.attrs){
+        var columnName=kotlin.dbcolToClzAttr(attr.columnName);
+        var kotlinType=kotlin.turnSqlType(attr.dataType);
+        if(attr.columnKey=="PRI"){
+            pkFiledName=columnName;
+            pkFiledType=kotlinType;
+        }
+    }
+}
+%>
+@RestController
+@RequestMapping("${urlPath}")
+class ${model.className}Controller {
+    val log: Logger = LoggerFactory.getLogger(this.javaClass)
+    @Autowired
+    lateinit var service: ${model.className}Service
+    /**
+    *
+    */
+    @GetMapping()
+    open fun get${model.className}Page(${objName}:${model.className}, page: PageQuery<${model.className}>): ResponseEntity<PageQuery<${model.className}>> {
+         page.paras = ${objName}
+         service.get${model.className}Page(page)
+         val status = if (page.list.size > 0) HttpStatus.OK else HttpStatus.NOT_FOUND
+         return ResponseEntity(page, status)
+    }
+    /**
+    *
+    */
+    @PutMapping("")
+    fun update(@RequestBody ${objName}: ${model.className}): ResponseEntity<Any?> {
+        var result: ResponseEntity<Any?>? = null
+        try {
+            service.${objName}Dao.updateById(${objName})
+            result= ResponseEntity("${objName}更新成功", HttpStatus.OK)
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+            result= ResponseEntity("${objName}更新失败", HttpStatus.INTERNAL_SERVER_ERROR)
+        } finally {
+            return result!!
+        }
+    }
+    /**
+    *
+    */
+    @PostMapping("")
+    fun add(@RequestBody ${objName}:${model.className}):ResponseEntity<Any?> {
+        var result: ResponseEntity<Any?>? = null
+        try {
+            var keyHolder = service.${objName}Dao.insertReturnKey(${objName})
+            log.info("执行插入之后额实体对象数据是:\n\${${objName}.toJsonStr()}")
+            result= ResponseEntity("${objName}保存成功", HttpStatus.OK)
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+            result= ResponseEntity("${objName}保存失败", HttpStatus.INTERNAL_SERVER_ERROR)
+        } finally {
+            return result!!
+        }
+    }
+
+    /**
+    *
+    */
+    @DeleteMapping()
+    fun delete(${pkFiledName}: ${pkFiledType}): ResponseEntity<Any?> {
+        var result: ResponseEntity<Any?>? = null
+        try {
+            var deletedNum = service.${objName}Dao.deleteById(${pkFiledName})
+            result= ResponseEntity("成功删除\${deletedNum}条", HttpStatus.OK)
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+            result= ResponseEntity("删除失败", HttpStatus.INTERNAL_SERVER_ERROR)
+        } finally {
+            return result!!
+        }
+    }
+}

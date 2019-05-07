@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "com.ruofeng.app.DemoApplication",
+            "projectName": "devops"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "com.ruofeng.app.DemoApplication",
+            "projectName": "javaMiniProject"
+        }
+    ]
+
+}

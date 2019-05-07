@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/lib/element-ui/2.7.0/index.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/avue/index.css" />
+
+    <script src="/lib/axios.min.js"></script>
+    <script src="/lib/vue.min.js"></script>
+    <script src="/lib/element-ui/2.7.0/index.js"></script>
+    <script src="/lib/avue/index.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+    <avue-crud :data="data" :option="option" v-model="obj"></avue-crud>
+    </br>
+    <el-tag>当前弹出框表单中的数据{{obj}}</el-tag>
+</div>
+<script src="list.js"></script>
+</body>
+</html>

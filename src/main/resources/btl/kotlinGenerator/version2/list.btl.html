@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>${model.tableComment}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/lib/list.css">
+</head>
+
+<body>
+    <div id="app">
+        <template>
+            <mu-container fluid="true">
+                <mu-col span="12">
+                    <mu-appbar style="width: 100%;">
+                        <mu-button fab small color="teal" slot="left" @click="add">
+                            <mu-icon value="add"></mu-icon>
+                        </mu-button>
+                        <mu-button round color="success" slot="left" class="myBtn" @click="setting">设置</mu-button>
+                        <mu-button small color="primary" @click="query" class="myBtn" slot="right">查询</mu-button>
+                        <mu-button small color="Teal" @click="reset" class="myBtn" slot="right">重置</mu-button>
+                        <mu-form :model="form" inline label-position="right" label-width="90">
+                            <mu-col span="2" v-for="(item,index) in allColumn.filter(this.isQueryFun)">
+                                <mu-form-item :prop="item.name" :label="item.title">
+                                    <mu-text-field action-icon=":iconfont icon-3"
+                                                   v-model="pageData.paras[item.name]"></mu-text-field>
+                                </mu-form-item>
+                            </mu-col>
+                        </mu-form>
+                    </mu-appbar>
+                    <mu-appbar style="width: 100%;height:45px" color="blueGrey500" title="查询条件" v-if="temp.showSettings">
+                    </mu-appbar>
+                    <mu-paper :z-depth="10"  v-if="temp.showSettings">
+                        <mu-row>
+                            <mu-col span="1" v-for="(item,index) in allColumn">
+                                <mu-checkbox :value="item.name" v-model="item.query"
+                                             :label="item.title"></mu-checkbox>
+                            </mu-col>
+                        </mu-row>
+                    </mu-paper>
+                    <mu-paper :z-depth="10"  v-if="temp.showSettings">
+                        <mu-appbar style="width: 100%;;height:45px" color="blueGrey500" title="要显示的表格列头">
+                        </mu-appbar>
+                        <mu-row>
+                            <mu-col span="1" v-for="(item,index) in allColumn">
+                                <mu-checkbox :value="item.name" v-model="item.show"
+                                             :label="item.title"></mu-checkbox>
+                            </mu-col>
+                        </mu-row>
+                    </mu-paper>
+                    <mu-paper :z-depth="10">
+                        <mu-data-table border stripe :columns="allColumn.filter(this.isShowFun)" :fit="true" :data="pageData.list" empty="没有数据">
+                            <template slot-scope="scope">
+                                <%
+                                    if(!isEmpty(model.attrs)){
+                                        for(attr in model.attrs){
+                                        var columnName = kotlin.dbcolToClzAttr(attr.columnName);
+                                %>
+                                <td class="is-right" v-if="config.${columnName}">{{scope.row.${columnName}}}</td>
+                                <%
+                                        }
+                                    }
+                                %>
+                                <td class="is-center">
+                                    <mu-button color="primary" small @click="edit(scope.row)" class="myBtn">
+                                        编辑
+                                    </mu-button>
+                                    <mu-button color="error" small @click="deleteBtnFun(scope.row.pkId)" class="myBtn">删除
+                                    </mu-button>
+                                </td>
+                            </template>
+                        </mu-data-table>
+                        <mu-flex justify-content="center">
+                            <mu-pagination :total="pageData.totalRow" :current.sync="pageData.paras.pageNumber"
+                                :page-size="pageData.paras.pageSize" @change="query"></mu-pagination>
+                        </mu-flex>
+                    </mu-paper>
+                </mu-col>
+                <mu-dialog transition="slide-bottom" fullscreen :open.sync="temp.showEditDialog">
+                    <mu-appbar color="primary" title="${model.tableComment}">
+
+                        <mu-button slot="right" flat @click="save">
+                            <mu-icon value=":iconfont icon-baocun-tianchong"></mu-icon>
+                        </mu-button>
+                        <mu-button slot="right" color="red" icon @click="temp.showEditDialog=false">
+                            <mu-icon value="close"></mu-icon>
+                        </mu-button>
+                    </mu-appbar>
+                    <div style="padding: 24px;">
+                        <mu-form :model="form" class="mu-demo-form" label-position="top" label-width="100">
+                            <mu-row>
+                                <%
+                                if(!isEmpty(model.attrs)){
+                                for(attr in model.attrs){
+                                var columnName = kotlin.dbcolToClzAttr(attr.columnName);
+                                %>
+                                <mu-col span="3" xl="3" lg="4" md="6">
+                                    <mu-form-item prop="${columnName}" icon=":iconfont icon-assignment" label="${attr.columnComment}">
+                                        <mu-text-field label-float v-model="form.${columnName}"></mu-text-field>
+                                    </mu-form-item>
+                                </mu-col>
+                                <%}}%>
+                            </mu-row>
+                        </mu-form>
+                    </div>
+                </mu-dialog>
+            </mu-container>
+        </template>
+    </div>
+    <script src="/lib/vue.min.js"></script>
+    <script src="/lib/axios.min.js"></script>
+    <script src="/lib/muse-ui/muse-ui.js"></script>
+    <script src="/lib/muse-ui/muse-ui-message.js"></script>
+    <script src="/lib/muse-ui/muse-ui-toast.js"></script>
+    <script data-main="list" src="/lib/require/require.js"></script>
+</body>
+
+</html>

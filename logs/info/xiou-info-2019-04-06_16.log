@@ -1,0 +1,400 @@
+2019-04-06 16:01:24,487 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:24,492 -- {dataSource-22} closed
+2019-04-06 16:01:25,052 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:01:25,052 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:01:28,581 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:01:28,743 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:01:28,744 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:28,745 -- Starting service [Tomcat]
+2019-04-06 16:01:28,745 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:01:28,746 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:01:28,746 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:01:28,747 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:01:28,747 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:01:28,748 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:01:28,790 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:01:28,790 -- Root WebApplicationContext: initialization completed in 3735 ms
+2019-04-06 16:01:28,841 -- Init DruidDataSource
+2019-04-06 16:01:28,898 -- {dataSource-23} inited
+2019-04-06 16:01:29,049 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:29,079 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:01:29,278 -- LiveReload server is running on port 35729
+2019-04-06 16:01:29,282 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:01:29,310 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:29,315 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:01:29,316 -- Started DemoApplication in 4.315 seconds (JVM running for 63058.705)
+2019-04-06 16:01:29,318 -- Condition evaluation unchanged
+2019-04-06 16:01:31,675 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:01:31,676 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:01:31,680 -- Completed initialization in 4 ms
+2019-04-06 16:01:42,805 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:42,809 -- {dataSource-23} closed
+2019-04-06 16:01:43,205 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:01:43,205 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:01:46,765 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:01:46,922 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:01:46,924 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:46,925 -- Starting service [Tomcat]
+2019-04-06 16:01:46,925 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:01:46,925 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:01:46,926 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:01:46,926 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:01:46,927 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:01:46,927 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:01:46,967 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:01:46,967 -- Root WebApplicationContext: initialization completed in 3759 ms
+2019-04-06 16:01:47,018 -- Init DruidDataSource
+2019-04-06 16:01:47,076 -- {dataSource-24} inited
+2019-04-06 16:01:47,228 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:47,258 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:01:47,461 -- LiveReload server is running on port 35729
+2019-04-06 16:01:47,466 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:01:47,474 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:01:47,475 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:01:47,479 -- Completed initialization in 3 ms
+2019-04-06 16:01:47,495 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:47,500 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:01:47,500 -- Started DemoApplication in 4.346 seconds (JVM running for 63076.89)
+2019-04-06 16:01:47,503 -- Condition evaluation unchanged
+2019-04-06 16:01:53,664 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:53,669 -- {dataSource-24} closed
+2019-04-06 16:01:54,212 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:01:54,213 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:01:57,771 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:01:57,929 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:01:57,931 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:57,932 -- Starting service [Tomcat]
+2019-04-06 16:01:57,932 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:01:57,933 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:01:57,933 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:01:57,933 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:01:57,934 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:01:57,934 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:01:57,974 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:01:57,975 -- Root WebApplicationContext: initialization completed in 3760 ms
+2019-04-06 16:01:58,025 -- Init DruidDataSource
+2019-04-06 16:01:58,081 -- {dataSource-25} inited
+2019-04-06 16:01:58,233 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:01:58,263 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:01:58,479 -- LiveReload server is running on port 35729
+2019-04-06 16:01:58,483 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:01:58,510 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:01:58,514 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:01:58,515 -- Started DemoApplication in 4.355 seconds (JVM running for 63087.905)
+2019-04-06 16:01:58,517 -- Condition evaluation unchanged
+2019-04-06 16:02:02,482 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:02:02,483 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:02:02,486 -- Completed initialization in 3 ms
+2019-04-06 16:03:39,714 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:03:39,718 -- {dataSource-25} closed
+2019-04-06 16:03:40,340 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:03:40,341 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:03:43,966 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:03:44,126 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:03:44,128 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:03:44,129 -- Starting service [Tomcat]
+2019-04-06 16:03:44,129 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:03:44,130 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:03:44,130 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:03:44,130 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:03:44,131 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:03:44,131 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:03:44,171 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:03:44,171 -- Root WebApplicationContext: initialization completed in 3828 ms
+2019-04-06 16:03:44,222 -- Init DruidDataSource
+2019-04-06 16:03:44,282 -- {dataSource-26} inited
+2019-04-06 16:03:44,434 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:03:44,463 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:03:44,660 -- LiveReload server is running on port 35729
+2019-04-06 16:03:44,665 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:03:44,693 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:03:44,697 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:03:44,698 -- Started DemoApplication in 4.409 seconds (JVM running for 63194.087)
+2019-04-06 16:03:44,700 -- Condition evaluation unchanged
+2019-04-06 16:03:45,719 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:03:45,720 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:03:45,724 -- Completed initialization in 3 ms
+2019-04-06 16:06:29,408 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:06:29,413 -- {dataSource-26} closed
+2019-04-06 16:06:29,827 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:06:29,827 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:06:33,366 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:06:33,524 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:06:33,525 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:06:33,526 -- Starting service [Tomcat]
+2019-04-06 16:06:33,526 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:06:33,527 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:06:33,528 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:06:33,528 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:06:33,528 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:06:33,529 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:06:33,569 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:06:33,569 -- Root WebApplicationContext: initialization completed in 3739 ms
+2019-04-06 16:06:33,620 -- Init DruidDataSource
+2019-04-06 16:06:33,676 -- {dataSource-27} inited
+2019-04-06 16:06:33,827 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:06:33,858 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:06:34,055 -- LiveReload server is running on port 35729
+2019-04-06 16:06:34,060 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:06:34,088 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:06:34,093 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:06:34,094 -- Started DemoApplication in 4.32 seconds (JVM running for 63363.483)
+2019-04-06 16:06:34,096 -- Condition evaluation unchanged
+2019-04-06 16:06:35,518 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:06:35,519 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:06:35,523 -- Completed initialization in 4 ms
+2019-04-06 16:12:03,986 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:12:03,989 -- {dataSource-27} closed
+2019-04-06 16:12:04,559 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:12:04,560 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:12:08,193 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:12:08,368 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:12:08,371 -- Initializing ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:12:08,372 -- Starting service [Tomcat]
+2019-04-06 16:12:08,373 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:12:08,373 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:12:08,374 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:12:08,374 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:12:08,374 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:12:08,376 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:12:08,420 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:12:08,420 -- Root WebApplicationContext: initialization completed in 3857 ms
+2019-04-06 16:12:08,483 -- Init DruidDataSource
+2019-04-06 16:12:08,545 -- {dataSource-28} inited
+2019-04-06 16:12:08,723 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:12:08,757 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:12:08,960 -- LiveReload server is running on port 35729
+2019-04-06 16:12:08,965 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:12:08,993 -- Starting ProtocolHandler ["http-nio-1111"]
+2019-04-06 16:12:08,998 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:12:08,998 -- Started DemoApplication in 4.499 seconds (JVM running for 63698.388)
+2019-04-06 16:12:09,001 -- Condition evaluation unchanged
+2019-04-06 16:12:09,598 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:12:09,599 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:12:09,602 -- Completed initialization in 3 ms
+2019-04-06 16:16:00,076 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:16:00,080 -- {dataSource-28} closed
+2019-04-06 16:21:16,369 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:21:16,369 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:21:19,955 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:21:20,115 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:21:20,117 -- Starting service [Tomcat]
+2019-04-06 16:21:20,118 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:21:20,158 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:21:20,158 -- Root WebApplicationContext: initialization completed in 3786 ms
+2019-04-06 16:21:20,209 -- Init DruidDataSource
+2019-04-06 16:21:20,266 -- {dataSource-29} inited
+2019-04-06 16:21:20,362 -- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'generatorController': Unsatisfied dependency expressed through field 'version2Service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'generatorService2' defined in file [D:\Workspace\java\repository\fighter\template\devops\target\classes\com\ruofeng\app\framework\codegen\service\GeneratorService2.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ruofeng.app.framework.codegen.service.GeneratorService2]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+	The method templateIt(String, Map<String,String>) in the type StringUtils is not applicable for the arguments (String, Map<String,Object>)
+
+2019-04-06 16:21:20,364 -- {dataSource-29} closed
+2019-04-06 16:21:20,365 -- Stopping service [Tomcat]
+2019-04-06 16:21:20,375 -- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-06 16:22:12,783 -- target1.length():9
+2019-04-06 16:22:12,789 -- 12345678
+2019-04-06 16:22:12,791 -- 234567
+2019-04-06 16:27:46,482 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:27:46,482 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:27:47,610 -- 
+原始字符串是:
+2019-04-06 16:27:49,562 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:27:49,696 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:27:49,698 -- Starting service [Tomcat]
+2019-04-06 16:27:49,699 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:27:49,699 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:27:49,700 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:27:49,700 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:27:49,700 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:27:49,701 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:27:49,735 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:27:49,735 -- Root WebApplicationContext: initialization completed in 3250 ms
+2019-04-06 16:27:49,814 -- Init DruidDataSource
+2019-04-06 16:27:49,863 -- {dataSource-30} inited
+2019-04-06 16:27:49,994 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:27:50,022 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:27:50,208 -- LiveReload server is running on port 35729
+2019-04-06 16:27:50,213 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:27:50,241 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:27:50,242 -- Started DemoApplication in 3.805 seconds (JVM running for 64639.632)
+2019-04-06 16:27:50,244 -- Condition evaluation unchanged
+2019-04-06 16:27:53,594 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:27:53,595 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:27:53,599 -- Completed initialization in 4 ms
+2019-04-06 16:28:00,508 -- 
+原始字符串是:
+2019-04-06 16:30:34,115 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:30:34,120 -- {dataSource-30} closed
+2019-04-06 16:30:34,979 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:30:34,980 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:30:38,040 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:30:38,174 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:30:38,176 -- Starting service [Tomcat]
+2019-04-06 16:30:38,177 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:30:38,177 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:30:38,178 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:30:38,178 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:30:38,178 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:30:38,179 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:30:38,212 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:30:38,213 -- Root WebApplicationContext: initialization completed in 3231 ms
+2019-04-06 16:30:38,255 -- Init DruidDataSource
+2019-04-06 16:30:38,303 -- {dataSource-31} inited
+2019-04-06 16:30:38,435 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:30:38,460 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:30:38,632 -- LiveReload server is running on port 35729
+2019-04-06 16:30:38,636 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:30:38,663 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:30:38,663 -- Started DemoApplication in 3.731 seconds (JVM running for 64808.053)
+2019-04-06 16:30:38,665 -- Condition evaluation unchanged
+2019-04-06 16:30:40,015 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:30:40,015 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:30:40,019 -- Completed initialization in 3 ms
+2019-04-06 16:30:49,239 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:30:49,243 -- {dataSource-31} closed
+2019-04-06 16:30:49,932 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:30:49,932 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:30:52,948 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:30:53,080 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:30:53,082 -- Starting service [Tomcat]
+2019-04-06 16:30:53,082 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:30:53,083 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:30:53,083 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:30:53,083 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:30:53,083 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:30:53,084 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:30:53,118 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:30:53,118 -- Root WebApplicationContext: initialization completed in 3184 ms
+2019-04-06 16:30:53,161 -- Init DruidDataSource
+2019-04-06 16:30:53,207 -- {dataSource-32} inited
+2019-04-06 16:30:53,335 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:30:53,359 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:30:53,527 -- LiveReload server is running on port 35729
+2019-04-06 16:30:53,531 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:30:53,566 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:30:53,567 -- Started DemoApplication in 3.679 seconds (JVM running for 64822.956)
+2019-04-06 16:30:53,569 -- Condition evaluation unchanged
+2019-04-06 16:30:55,695 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:30:55,696 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:30:55,698 -- Completed initialization in 2 ms
+2019-04-06 16:31:14,128 -- 
+原始字符串是:
+2019-04-06 16:31:45,403 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:31:45,407 -- {dataSource-32} closed
+2019-04-06 16:31:46,105 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:31:46,106 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:31:49,119 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:31:49,251 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:31:49,253 -- Starting service [Tomcat]
+2019-04-06 16:31:49,253 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:31:49,254 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:31:49,254 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:31:49,254 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:31:49,254 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:31:49,255 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:31:49,288 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:31:49,288 -- Root WebApplicationContext: initialization completed in 3180 ms
+2019-04-06 16:31:49,330 -- Init DruidDataSource
+2019-04-06 16:31:49,412 -- {dataSource-33} inited
+2019-04-06 16:31:49,539 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:31:49,564 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:31:49,729 -- LiveReload server is running on port 35729
+2019-04-06 16:31:49,732 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:31:49,758 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:31:49,759 -- Started DemoApplication in 3.698 seconds (JVM running for 64879.148)
+2019-04-06 16:31:49,760 -- Condition evaluation unchanged
+2019-04-06 16:31:51,906 -- 
+原始字符串是:
+2019-04-06 16:31:52,735 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:31:52,736 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:31:52,739 -- Completed initialization in 3 ms
+2019-04-06 16:32:07,260 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:32:07,264 -- {dataSource-33} closed
+2019-04-06 16:32:07,404 -- 
+原始字符串是:
+2019-04-06 16:32:08,036 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:32:08,036 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:32:11,029 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:32:11,160 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:32:11,162 -- Starting service [Tomcat]
+2019-04-06 16:32:11,162 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:32:11,163 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:32:11,163 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:32:11,163 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:32:11,164 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:32:11,164 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:32:11,197 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:32:11,197 -- Root WebApplicationContext: initialization completed in 3159 ms
+2019-04-06 16:32:11,239 -- Init DruidDataSource
+2019-04-06 16:32:11,285 -- {dataSource-34} inited
+2019-04-06 16:32:11,410 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:32:11,434 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:32:11,627 -- LiveReload server is running on port 35729
+2019-04-06 16:32:11,630 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:32:11,656 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:32:11,656 -- Started DemoApplication in 3.663 seconds (JVM running for 64901.045)
+2019-04-06 16:32:11,658 -- Condition evaluation unchanged
+2019-04-06 16:32:13,762 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:32:13,763 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:32:13,766 -- Completed initialization in 3 ms
+2019-04-06 16:33:48,404 -- 
+原始字符串是:
+2019-04-06 16:34:53,717 -- 
+原始字符串是:
+2019-04-06 16:35:11,109 -- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:35:11,114 -- {dataSource-34} closed
+2019-04-06 16:35:11,960 -- Starting DemoApplication on RuoFeng945 with PID 19656 (D:\Workspace\java\repository\fighter\template\devops\target\classes started by Administrator in d:\Workspace\java\repository\fighter\template\devops)
+2019-04-06 16:35:11,960 -- No active profile set, falling back to default profiles: default
+2019-04-06 16:35:14,782 -- 
+原始字符串是:
+2019-04-06 16:35:15,001 -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c266af40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-06 16:35:15,139 -- Tomcat initialized with port(s): 1111 (http)
+2019-04-06 16:35:15,141 -- Starting service [Tomcat]
+2019-04-06 16:35:15,141 -- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-06 16:35:15,142 -- An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-04-06 16:35:15,142 -- Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2019-04-06 16:35:15,142 -- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-06 16:35:15,142 -- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-06 16:35:15,143 -- OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2019-04-06 16:35:15,177 -- Initializing Spring embedded WebApplicationContext
+2019-04-06 16:35:15,177 -- Root WebApplicationContext: initialization completed in 3215 ms
+2019-04-06 16:35:15,219 -- Init DruidDataSource
+2019-04-06 16:35:15,266 -- {dataSource-35} inited
+2019-04-06 16:35:15,392 -- Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-06 16:35:15,416 -- Adding welcome page: class path resource [static/index.html]
+2019-04-06 16:35:15,587 -- LiveReload server is running on port 35729
+2019-04-06 16:35:15,590 -- Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-06 16:35:15,618 -- Tomcat started on port(s): 1111 (http) with context path ''
+2019-04-06 16:35:15,618 -- Started DemoApplication in 3.703 seconds (JVM running for 65085.007)
+2019-04-06 16:35:15,620 -- Condition evaluation unchanged
+2019-04-06 16:35:20,092 -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-06 16:35:20,093 -- Initializing Servlet 'dispatcherServlet'
+2019-04-06 16:35:20,097 -- Completed initialization in 2 ms
+2019-04-06 16:36:39,845 -- 
+原始字符串是:
+2019-04-06 16:40:11,734 -- 
+原始字符串是:
+2019-04-06 16:44:58,963 -- 
+原始字符串是:
+2019-04-06 16:47:00,246 -- 
+原始字符串是:
+2019-04-06 16:47:36,671 -- 
+原始字符串是:
+2019-04-06 16:48:07,447 -- 
+原始字符串是:tb_sample_clothes_price,
+UPPER_CAMEL方式:TbSampleClothesPrice
+
+2019-04-06 16:53:15,575 -- 
+原始字符串是:tb_sample_clothes_price,
+转换成LOWER_CAMEL方式:tbSampleClothesPrice
+转换成UPPER_CAMEL方式:TbSampleClothesPrice

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${model.tableComment}配置页面</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.4.9/theme-chalk/index.css" rel="stylesheet"/>
+    <link href="/lib/layx/layx.min.css" rel="stylesheet">
+    <style>
+        .el-checkbox.is-bordered {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .el-card {
+            /*border-color: #409EFF;*/
+            border-color: #b3c0d1;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <template>
+        <el-row :gutter="12">
+            <el-col :span="12">
+                <el-card shadow="hover">
+                    <div slot="header" class="clearfix">
+                        <span>查询条件</span>
+                        <el-button style="float: right; padding: 3px 0" type="text">操作按钮
+                        </el-button>
+                    </div>
+                    <div class="clearfix">
+<%
+if(!isEmpty(model.attrs)){
+    for(attr in model.attrs){
+        var columnName=kotlin.dbcolToClzAttr(attr.columnName);
+    %>
+                        <el-checkbox v-model="condition.${columnName}" label="${attr.columnComment}" border>
+                        </el-checkbox>
+<%
+    }/*end of for(attr in model.attrs)*/
+}/*end of if(!isEmpty(model.attrs))*/
+%>
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :span="12">
+                <el-card shadow="hover">
+                    <div slot="header" class="clearfix">
+                        <span>表格列头</span>
+                        <el-button style="float: right; padding: 3px 0" type="text">操作按钮
+                        </el-button>
+                    </div>
+                    <div class="clearfix">
+<%
+if(!isEmpty(model.attrs)){
+    for(attr in model.attrs){
+        var columnName=kotlin.dbcolToClzAttr(attr.columnName);
+%>
+                        <el-checkbox v-model="table.${columnName}" label="${attr.columnComment}" border>
+                        </el-checkbox>
+<%
+    }/*end of for(attr in model.attrs)*/
+}/*end of if(!isEmpty(model.attrs))*/
+%>
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+    </template>
+</div>
+<script src="http://cdn.bootcss.com/vue/2.5.9/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.4.9/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
+<script src="/lib/layx/layx.min.js"></script>
+<script src="/lib/common.js"></script>
+<script src="setting.js"></script>
+</body>
+</html>

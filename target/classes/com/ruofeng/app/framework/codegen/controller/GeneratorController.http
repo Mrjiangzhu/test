@@ -1,0 +1,32 @@
+###
+http://localhost:1111/ruofeng/app/framework/generator/tableList
+
+### 调用默认的make服务
+GET  http://localhost:1111/framework/generator/pojo?tableName=menu&pkg=com.ruofeng.app.da011.menu
+
+### 调用数据生成服务by 指定的生成类型
+GET  http://localhost:1111/framework/generator/pojo?tableName=处理方式&pkg=com.ruofeng.app.da011.处理方式
+
+
+### 调用数据生成服务by 指定的生成类型
+GET  http://localhost:1111/framework/generator/pojo?tableName=menu&pkg=com.ruofeng.app.da011.menu&makeType=htmljs
+
+###
+### 调用数据生成服务by 指定的生成类型
+POST  http://localhost:1111/ruofeng/app/framework/generator/pojo
+Content-Type: application/json;charset=UTF-8
+
+{
+    "projectPath":"D://Workspace/java/repository/fighter/da011",
+    "parentPkg":"com.ruofeng.app.da011",
+    "tableList": [
+        {
+            "pkg": "com.ruofeng.app.da011.caseTypeConfig",
+//            "makeType": "model",
+            "tableName": "Case_type_config"
+        }
+    ]
+}
+
+###
+

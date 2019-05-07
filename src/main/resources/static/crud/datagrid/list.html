@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>行编辑Datagrid</title>
+    <link href="../../lib/list.css" rel="stylesheet" />
+    <style>
+        table tr td {
+            height: 48px;
+            width: 100%;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .changed {
+
+            background: #cccccc;
+
+            padding: 1px 5px 1px 5px;
+
+            margin: 1px;
+
+            border: 1px solid #f4ede6;
+
+            position: static;
+
+            bottom: 0px;
+
+            line-height: 20px;
+
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <template>
+            <mu-container>
+                <mu-paper :z-depth="1">
+                    <mu-appbar style="width: 100%;" color="primary">
+                        <mu-button icon slot="left">
+                            <mu-icon value="menu"></mu-icon>
+                        </mu-button>
+                        Title
+                        <mu-menu slot="right">
+                            <mu-button flat>MENU</mu-button>
+                            <mu-list slot="content">
+                                <mu-list-item button>
+                                    <mu-list-item-content>
+                                        <mu-list-item-title>Menu Item 1</mu-list-item-title>
+                                    </mu-list-item-content>
+                                </mu-list-item>
+                                <mu-list-item button>
+                                    <mu-list-item-content>
+                                        <mu-list-item-title>Menu Item 2</mu-list-item-title>
+                                    </mu-list-item-content>
+                                </mu-list-item>
+                            </mu-list>
+                        </mu-menu>
+                    </mu-appbar>
+                    <mu-data-table :columns="columns" :sort.sync="sort" @sort-change="handleSortChange" :data="list"
+                        border stripe>
+                        <template slot-scope="scope">
+                            <td>
+                                <div contenteditable="true" class="changed" v-if="selectIndex===scope.$index">
+                                    {{scope.row.name}}
+                                </div>
+                                <div v-else v-html="scope.row.name">
+                                </div>
+                            </td>
+                            <td class="is-right">
+                                <div contenteditable="true" class="changed" v-if="selectIndex===scope.$index">
+                                    {{scope.row.calories}}</div>
+                                <div v-else>{{caloriesFormatter(scope.row.calories)}}</div>
+                            </td>
+                            <td class="is-right">
+                                <div contenteditable="true" class="changed" v-if="selectIndex===scope.$index">
+                                    {{scope.row.fat}}</div>
+                                <div v-else>{{scope.row.fat}}</div>
+                            </td>
+                            <td class="is-right">
+                                <div contenteditable="true">{{scope.row.carbs}}</div>
+                            </td>
+                            <td class="is-right">
+                                <div contenteditable="true">{{scope.row.protein}}</div>
+                            </td>
+                            <td class="is-right">
+                                <div contenteditable="true">{{scope.row.iron}}%</div>
+                            </td>
+                        </template>
+                    </mu-data-table>
+                </mu-paper>
+            </mu-container>
+        </template>
+    </div>
+    <script src="/lib/vue.min.js"></script>
+    <script src="/lib/axios.min.js"></script>
+    <script src="/lib/muse-ui/muse-ui.js"></script>
+    <script src="list.js">    </script>
+</body>

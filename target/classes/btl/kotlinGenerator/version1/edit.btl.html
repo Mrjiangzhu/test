@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>${model.tableComment}</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.4.9/theme-chalk/index.css" rel="stylesheet"/>
+  <link href="/lib/layx/layx.min.css" rel="stylesheet">
+  <style></style>
+</head>
+<body>
+<div id="app">
+
+  <template>
+    <el-form :model="param" label-width="150px" label-position="left"
+             style="margin-left: 20px;margin-right: 20px;margin-top: 40px;" :highlight-current-row=true>
+<%
+var pkFieldName;
+if(!isEmpty(model.attrs)){
+  for(attr in model.attrs){
+    var columnName=kotlin.dbcolToClzAttr(attr.columnName);
+    var kotlinType=kotlin.turnSqlType(attr.dataType);
+    if(attr.columnKey=="PRI"){
+        pkFieldName=columnName;
+        if(attr.extra=="auto_increment"){
+%>
+        <input v-model="param.${pkFieldName}" type="hidden" id="pkId">
+
+<%      }else{
+%>
+    <el-form-item label="${attr.columnComment}">
+        <el-input v-model="param.${pkFieldName}" id="${columnName}"></el-input>
+    </el-form-item>
+<%      }
+    }else{%>
+    <el-form-item label="${attr.columnComment}">
+<%      switch(kotlinType){
+        case "String":%>
+        <el-input v-model="param.${columnName}" style="width: 100%;"></el-input>
+      <%break;
+      case "Date":%>
+        <el-date-picker v-model="param.${columnName}" type="date" placeholder="选择日期" format="yyyy-MM-dd" value-format="yyyy-MM-dd">
+        </el-date-picker>
+      <%break;
+      case "Timestamp":%>
+        <el-date-picker v-model="param.${columnName}" type="datetime" placeholder="选择日期和时间" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss">
+        </el-date-picker>
+      <%break;
+      case "Integer"  :%>
+        <el-input-number v-model="num4"></el-input-number>
+      <%break;
+        default:%>
+        <el-input v-model="param.${columnName}" style="width: 100%;"></el-input>
+      <%
+      }/* >>> switch(kotlinType) */
+      %>
+    </el-form-item>
+<%
+    }/*  >>> if(attr.columnKey=="PRI") else */
+  }/*  >>> for */
+}/*  >>> if(!isEmpty(model.attrs)) */
+%>
+    </el-form>
+  </template>
+</div>
+<script src="http://cdn.bootcss.com/vue/2.5.9/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.4.9/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
+<script src="/lib/layx/layx.min.js"></script>
+<script src="/lib/common.js"></script>
+<script src="edit.js"></script>
+</body>
+</html>

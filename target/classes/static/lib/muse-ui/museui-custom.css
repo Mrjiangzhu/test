@@ -1,0 +1,39 @@
+@import url(../muse-ui/muse-ui.css);
+@import url(//at.alicdn.com/t/font_273637_ishrco275nl.css);
+@import url(https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css);
+@import url(../layx/layx.min.css);
+
+.mu-appbar-title .mu-input-content span.mu-input-prefix-text {
+    line-height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    background-color: #FBFBFB;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.mu-form-item {
+    color: black;
+}
+.mu-form-item__focus {
+    color: #1aa094
+}
+
+.mu-text-field .mu-input-focus-line {
+    background-color: #1aa094;
+}
+
+.mu-form-item-label {
+    border-color: rgb(230, 230, 230);
+    text-align: center;
+    background-color: rgb(251, 251, 251);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+}
+.mu-select-input{
+    text-align: center;
+}
